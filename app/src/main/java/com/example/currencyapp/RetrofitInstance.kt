@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
     private const val BASE_URL = "https://api.collectapi.com/economy/"
-    private const val API_KEY = "YOUR_API_KEY"
+    private const val API_KEY = "7rJwTRdW5tdoPZLwZHGDPM:2Pwa6o0OozozWU6Z1MM8Qp"
 
     private val interceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
