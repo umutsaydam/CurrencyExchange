@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:letterSpacing="0.05"
+        android:padding="15dp"
+        android:text="Currency Converter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="25dp">
+
+        <Spinner
+            android:id="@+id/spinnerCurrencySymbols"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.4"
+            android:backgroundTint="@color/white" />
+
+        <EditText
+            android:id="@+id/convertFromCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_weight="0.6"
+            android:backgroundTint="@color/white"
+            android:focusedByDefault="false"
+            android:fontFamily="@font/roboto_black"
+            android:hint="Amount"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgExchange"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:src="@drawable/ic_exchange_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp">
+
+        <Spinner
+            android:id="@+id/spinnerCurrencySymbols2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.4"
+            android:backgroundTint="@color/white" />
+
+        <EditText
+            android:id="@+id/convertToCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_weight="0.6"
+            android:backgroundTint="@color/white"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/roboto_black"
+            android:hint="Amount"
+            android:inputType="numberSigned"
+            android:paddingStart="10dp"
+            android:focusable="false"
+            android:clickable="false"
+            android:paddingEnd="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:padding="12dp"
+        android:text="Convert"
+        android:textSize="19sp" />
+
+</LinearLayout>
